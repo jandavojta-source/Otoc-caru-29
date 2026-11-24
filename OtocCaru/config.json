@@ -1,0 +1,13 @@
+{
+    "addOnName": "OtocCaru",
+    "defaultLanguage": "INT",
+    "languages": [
+        "INT"
+    ],
+    "version": "1.0.0",
+    "copyright": {
+        "name": "Vlastni doplnek",
+        "year": "%Y"
+    },
+    "description": "Obrati smer vybranych car"
+}

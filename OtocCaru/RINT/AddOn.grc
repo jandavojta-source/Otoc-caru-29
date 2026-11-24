@@ -1,0 +1,16 @@
+\xef\xbb\xbf#include "ResourceIds.hpp"
+
+'STR#' ID_ADDON_INFO "Add-on Name and Description" {
+/* [  1] */		"Otoč čáru"
+/* [  2] */		"Obrátí směr vybraných čar (prohodí počáteční a koncový bod)."
+}
+
+'STR#' ID_ADDON_MENU "Strings for the Menu" {
+/* [  1] */		"Otoč čáru ^E3 ^ES ^EE ^EI ^ED ^ET ^10001"
+}
+
+'STR#' ID_ADDON_MSG "Messages" {
+/* [  1] */		"Otoč čáru"
+/* [  2] */		"Nejsou vybrány žádné čáry. Vyberte alespoň jednu čáru."
+/* [  3] */		"Obrácen směr čar: %d"
+}
