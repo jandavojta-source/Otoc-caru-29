@@ -17,6 +17,7 @@ jobs:
           python-version: '3.10'
 
       - name: Sestavit doplněk pro Archicad 30
+        working-directory: OtocCaru
         run: python Tools/BuildAddOn.py --configFile config.json --acVersion 30 --buildConfig RelWithDebInfo --package
 
       - name: Uložit hotový doplněk
