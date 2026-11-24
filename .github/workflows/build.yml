@@ -1,0 +1,26 @@
+name: Sestavit doplněk
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Stáhnout soubory projektu
+        uses: actions/checkout@v4
+
+      - name: Nainstalovat Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Sestavit doplněk pro Archicad 30
+        run: python Tools/BuildAddOn.py --configFile config.json --acVersion 30 --buildConfig RelWithDebInfo --package
+
+      - name: Uložit hotový doplněk
+        uses: actions/upload-artifact@v4
+        with:
+          name: OtocCaru-Archicad30-Mac
+          path: Build/Package/30/*.zip
