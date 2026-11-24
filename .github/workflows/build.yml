@@ -24,4 +24,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: OtocCaru-Archicad30-Mac
-          path: Build/Package/30/*.zip
+          path: |
+            OtocCaru/Build/Package/**
+            OtocCaru/Build/**/*.zip
+          if-no-files-found: warn
